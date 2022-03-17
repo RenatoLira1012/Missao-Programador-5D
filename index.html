@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee265cf59f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>Lista de Tarefas</title>
 </head>
 
 <body>
-    <h1>Lista de Tarefas</h1>
+    <div class="container">
 
-    <input placeholder="O que tenho que fazer...">
+        <input id="input-todo" placeholder="O que tenho que fazer...">
 
-    <button>Adicionar</button>
+        <button id="add-button">Adicionar</button>
 
-    <div>
-        <ul>
-            <button><i class="fa-solid fa-rocket"></i></button>
-            <li>Estudar Programação</li>
-            <button><i class="fa-solid fa-trash"></i></button>
+        <ul id="container-tasks">
+            <li class="item-task">
+            <button class="done-task-button"><i class="fa-solid fa-rocket"></i></button>
+            <p class="task-name">Estudar Programação</p>
+            <button class="delete-button"><i class="fa-solid fa-trash"></i></button>
+            </li>
+
+            <li class="item-task">
+                <button class="done-task-button"><i class="fa-solid fa-rocket"></i></button>
+                <p class="task-name">Estudar Programação</p>
+                <button class="delete-button"><i class="fa-solid fa-trash"></i></button>
+                </li>
         </ul>
     </div>
 </body>

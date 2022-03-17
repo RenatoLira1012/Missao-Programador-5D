@@ -1,0 +1,107 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(90deg, #7F00FF 0%, #E100FF 100%);
+}
+
+#add-button {
+    width: 130px;
+    height: 40px;
+    background: #8052EC;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 17px;
+}
+
+#add-button:hover {
+    opacity: 0.8;
+}
+
+#add-button:active {
+    opacity: 0.6;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 541px;
+    height: 498px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#input-todo {
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(209, 211, 212, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+#container-tasks {
+    width: 100%;
+    list-style: none;
+}
+
+.item-task {
+    background: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 45px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.item-task:hover .delete-button {
+    opacity: 1;
+}
+
+.task-name {
+    color: #000000;
+    font-size: 15px;
+}
+
+.delete-button {
+    border: none;
+    background: transparent;
+    color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.done-task-button {
+    border: none;
+    background: transparent;
+    color: blue;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.item-task:hover .done-task-button {
+    opacity: 1;
+}
