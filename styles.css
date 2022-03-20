@@ -11,7 +11,7 @@ body {
 }
 
 #add-button {
-    width: 130px;
+    width: 97px;
     height: 40px;
     background: #8052EC;
     border-radius: 5px;
@@ -33,7 +33,7 @@ body {
 
 .container {
     background: #FFFFFF;
-    width: 541px;
+    width: 375px;
     border-radius: 5px;
     margin-top: 50px;
     margin-left: auto;
@@ -42,7 +42,7 @@ body {
 }
 
 #input-todo {
-    width: 365px;
+    width: 226px;
     height: 40px;
     border: 2px solid rgba(209, 211, 212, 0.4);
     box-sizing: border-box;
